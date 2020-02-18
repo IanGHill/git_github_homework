@@ -30,9 +30,16 @@ puts my_hash
 #This is my loop
 i = 1
 while true
-  puts " Number of times through the loop = #{i}"
+  puts " Number of times through the outer loop = #{i}"
   i += 1
   if i >= 4
+    x = 1
+    while true
+      puts "Im in the inner loop #{x} times "
+      x += 1
+      break
+    end
+    puts "I've broken out of the inner loop"
     break
   end
 end
